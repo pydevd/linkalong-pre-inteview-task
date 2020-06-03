@@ -1,0 +1,8 @@
+.*
+!.gitignore
+!.eslintrc.js
+
+
+*.py[cod]
+
+node_modules/
