@@ -6,8 +6,8 @@ from fastapi.templating import Jinja2Templates
 from linkalong import settings
 
 app = FastAPI(debug=settings.DEBUG, version="0.1.0")
-app.mount("/static", StaticFiles(directory="static"), name="static")
-j2 = Jinja2Templates(directory="templates")
+app.mount("/static", StaticFiles(directory=settings.STATIC_DIR), name="static")
+j2 = Jinja2Templates(directory=settings.TEMPLATES_DIR)
 
 
 @app.get("/")

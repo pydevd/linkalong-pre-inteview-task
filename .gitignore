@@ -2,7 +2,7 @@
 !.gitkeep
 !.gitignore
 !.eslintrc.js
-
+!.dockerignore
 
 *.py[cod]
 
